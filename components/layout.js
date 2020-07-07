@@ -78,10 +78,10 @@ function Layout({ children, home }) {
 
             <footer className={`${utilStyles.footer}`}>
             <>
-                <a href="https://github.com/jovair/nextjs">
+                <a href="https://github.com/jovair/nextjs-blog.git">
                     {/* Carrega a foto na página princial */}
                     <div>
-                        <img src="/images/GitHub-Mark-32px.png" alt={name}/>
+                        <img src="/images/github.png" alt={name}/>
                     </div>
                     {/* Carrega a constante name para a página principal */}
                     <div>

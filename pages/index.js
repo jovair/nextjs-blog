@@ -1,8 +1,19 @@
+// Componente nativo do React que prepara o cabeçalho do site para ser aplicado corretamente
 import Head from 'next/head'
+
+// importa o título do site para ser aplicado na aba do navegador
 import Layout, { siteTitle } from '../components/layout'
+
+// importa as classes do utils.module.css que está em styles
 import utilStyles from '../styles/utils.module.css'
+
+
 import { getSortedPostsData } from '../lib/posts'
+
+// importa o componente nativo do React para a criação de links entre as páginas
 import Link from 'next/link'
+
+
 import Date from '../components/date'
 
 export async function getStaticProps() {
