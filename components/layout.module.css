@@ -1,0 +1,30 @@
+/* Define a estrutura do container*/
+.container {
+    max-width: 44rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+  }
+  
+/* Define a estrutura do header */
+.header {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* define a altura e largura da foto nas página dos posts*/
+.headerImage {
+width: 6rem;
+height: 6rem;
+}
+
+/* Define a altura e largura da foto na página principal */
+.headerHomeImage {
+width: 8rem;
+height: 8rem;
+}
+
+/* Define a posição do conteúdo que indica a volta para a página principal nos posts*/
+.backToHome {
+margin: 3rem 0 0;
+}
