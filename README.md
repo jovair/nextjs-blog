@@ -55,7 +55,7 @@ No Next.js o Componente nativo React `<Head>` é usado para o cabeçalho em luga
 
 ### **Componente Layout**
 
-- O arquivo layout.js dentro do diretório componentes contém a função `Layout` com as definições padrão que poderão ser importadas pelo index.js e por outras páginas. Nela são definidos 
+- O arquivo layout.js dentro do diretório componentes contém o componente `Layout`. É esse componente que define o layout da página principal e demais demais páginas. O arquivo index.js impora esse componente e todo o conteúdo visual fica dentro das tags  
 Assim como os componentes `Link`,`Head` e `styled-js`, neste momento ela não será usada. Eles foram aplicados no treinamento original, mas depois foram removidos para dar lugar ao conteúdo definitivo. Quando começarmos a usá-los, faremos referência a este texto.
 
 ### **Estilos CSS**
@@ -121,7 +121,7 @@ Em pages foi criado o arquivo _app.js contendo o componente App. Este componente
 
 - [**`componentes/layout.module.css`**](https://github.com/jovair/nextjs-blog/blob/master/components/layout.module.css)
 - [**`styles/utils.module.css`**](https://github.com/jovair/nextjs-blog/blob/master/styles/utils.module.css)
-. O código CSS da página de apresentação inicial estava dentro do próprio arquivo index.js. Ao longo do curso a própria página foi substituída, mas como eu considerei interessante manter os links dos manuais, foi mantido o código HTML na página princial, com os devidos ajustes e o código CSS foi trazido para o utils.module.css 
+. O código CSS da página de apresentação inicial estava dentro do próprio arquivo index.js. Ao longo do curso o conteúdo da página foi completamente substituído, dando lugar aos posts do blog. Entretanto, considerando que os links para os manuais originais sejam interessantes, eles foram mantidos na primeira página, divergindo do resultado final do treinamento. Esse conteúdo estava dentro de grids CSS, que foram removidos do arquivo index.js e levados para o utils.module.css.
 
 ## **PRE-RENDERIZAÇÃO E BUSCA DE DADOS**
 
