@@ -1,8 +1,19 @@
+// Componente nativo do React que prepara o cabeçalho do site para ser aplicado corretamente
 import Head from 'next/head'
+
+// importa o título do site para ser aplicado na aba do navegador
 import Layout, { siteTitle } from '../components/layout'
+
+// importa as classes do utils.module.css que está em styles
 import utilStyles from '../styles/utils.module.css'
+
+
 import { getSortedPostsData } from '../lib/posts'
+
+// importa o componente nativo do React para a criação de links entre as páginas
 import Link from 'next/link'
+
+
 import Date from '../components/date'
 
 export async function getStaticProps() {
@@ -22,7 +33,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section>
         <div className={utilStyles.headingMd}>
-          <p>Formado em Análise de Sistemas, com especização em Gerência de Projetos. Você pode entrar em contato comigo pelo <a href="https://twitter.com/silva_jovair">Twitter</a> </p>
+          <p>Formado em Análise de Sistemas, com especialização em Gerência de Projetos. Você pode entrar em contato comigo pelo <a href="https://twitter.com/silva_jovair">Twitter</a> </p>
         </div>
         <div className={utilStyles.headingP}>
           <p>
@@ -70,7 +81,7 @@ export default function Home({ allPostsData }) {
             </a>
             <a href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               className={utilStyles.card}>
-              <h3>Deploy &rarr;</h3>
+              <h3>Implantação &rarr;</h3>
               <p>
                 Implante um site Next.js facilmente em uma URL pública com o Vercel.
               </p>

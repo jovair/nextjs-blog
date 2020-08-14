@@ -75,13 +75,19 @@
   padding-top: 2rem;
   display: block;
   align-items: center;
-  margin-left: 25px;
+  margin: 0 auto;
+  height: 70px;
 }
   
 .footer a {
     display: block;
     justify-content: center;
     align-items: center;
+}
+
+.footer h3 {
+  display: block;
+  margin: 0 auto;
 }
   
 .description {
@@ -142,3 +148,4 @@
       flex-direction: column;
     }
 }
+
